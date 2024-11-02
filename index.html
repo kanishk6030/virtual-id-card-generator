@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual ID Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Your Details</h2>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="text" id="university" placeholder="University Name" required>
+            <input type="url" id="instagram" placeholder="Instagram URL">
+            <input type="url" id="twitter" placeholder="Twitter URL">
+            <input type="url" id="linkedin" placeholder="LinkedIn URL">
+            <input type="url" id="github" placeholder="GitHub URL">
+            <input type="file" id="profilePhoto" accept="image/*" required>
+            <button type="button" onclick="generateIdCard()">Generate ID Card</button>
+        </form>
+    </div>
+
+    <div class="id-card" id="idCard" style="display: none;">
+        <img src="" id="profileImg" alt="Profile Photo">
+        <h3 id="cardName"></h3>
+        <p id="cardAddress"></p>
+        <p id="cardUniversity"></p>
+        <div class="social-links">
+            <a href="" id="instagramLink" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="" id="twitterLink" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="" id="linkedinLink" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="" id="githubLink" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>        
+        <div id="qrCode"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

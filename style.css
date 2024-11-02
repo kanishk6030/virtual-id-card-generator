@@ -1,0 +1,186 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    padding: 20px;
+}
+
+/* Form container */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+}
+
+.form-container h2 {
+    font-size: 1.5em;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #007bff;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* ID Card styling */
+.id-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #4a90e2, #007bff);
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.id-card img#profileImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #ffffff;
+}
+
+.id-card h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.id-card p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #e0e7ff;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+/* QR Code styling without circular border */
+#qrCode img {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border:2px solid white;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .form-container, .id-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .id-card img#profileImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    #qrCode img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container input, .form-container button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .id-card {
+        padding: 15px;
+    }
+
+    .id-card img#profileImg {
+        width: 70px;
+        height: 70px;
+    }
+
+    #qrCode img {
+        width: 100px;
+        height: 100px;
+    }
+}
