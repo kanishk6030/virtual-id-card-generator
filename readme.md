@@ -2,10 +2,6 @@
 
 This project is a web-based application that generates a virtual ID card based on user input. Users can enter their details (such as name, address, university, and social media links), upload a profile photo, and generate a personalized ID card with a QR code that encodes the details.
 
-## Demo
-
-![Screenshot of Virtual ID Card Generator](screenshot.png)
-
 ## Features
 
 - **Responsive Design**: The application is fully responsive and adapts to different screen sizes.
@@ -22,7 +18,7 @@ This project is a web-based application that generates a virtual ID card based o
 - **Font Awesome**: Icons for social media links.
 
 ## Project Structure
-├── index.html # Main HTML file for the project layout
-├── style.css # CSS file for styling and responsiveness 
-├── app.js # JavaScript file for generating the ID card and QR code s
+- **index.html** : Main HTML file for the project layout
+- **style.css** : CSS file for styling and responsiveness 
+- **app.js** : JavaScript file for generating the ID card and QR code s
 
